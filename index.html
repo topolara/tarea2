@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mapa de Leaflet</title>   
+
+	<!-- Hoja de estilos CSS de Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>	
+	<!-- Biblioteca JS de Leaflet -->
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>	
+	<!-- Complemento Leaflet-providers -->
+	<script src="js/leaflet-providers.js"></script>	
+	
+	<!-- Hoja de estilos CSS adicionales -->
+	<link rel="stylesheet" href="css/estilos.css"/>	
+
+	<!-- En HTML: enlace a Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+	integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	crossorigin="anonymous" />
+	
+	<!-- Enlace a biblioteca JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">
+	</script>	
+	
+</head>
+<body>
+	<h1>Mapa provincias de Costa Rica y Temperatura</h1>
+	<p>Costa Rica es un país, con divisiones políticas que son: Provincias, Cantones y Distritos</p>
+	<!-- Elemento div para contener el mapa -->
+	
+<div class="row">
+<div class="column" style="background-color:#7CC1FF;">
+<h2>Ubicación</h2>
+<p>Mapa de Costa Rica</p>
+	<div id="mapid"></div>	
+
+	
+</div>
+<div class="column" style="background-color:#DEF5E3;">
+<h2>Descripción y opciones</h2>
+<p>
+<h2>Costa Rica</h2>
+<p>
+Costa Rica, denominada oficialmente República de Costa Rica, es una nación soberana, organizada como una república presidencialista unitaria compuesta por 7 provincias. Ubicada en América Central, posee un territorio con un área total de 51 100 km². Limita con Nicaragua al norte, el mar Caribe al este, Panamá al sureste y el océano Pacífico al oeste. En cuanto a los bordes marítimos, colinda con Panamá, Nicaragua, Colombia y Ecuador.7​8​ Cuenta con 5 057 000  habitantes según su última proyección demográfica.9​ Su capital, centro político y económico es San José, y su idioma oficial es el español.10​
+
+Con una sólida y longeva democracia, de entre las más funcionales del mundo,11​12​13​ y una eficaz capacidad de movilidad social que le permite alcanzar un elevado progreso general en relación a la distribución y tamaño de su economía,14​ Costa Rica es el quincuagésimo país más rico del mundo según datos del Fondo Monetario Internacional15​ y uno de los países más estables de América, calificado relativamente bien en todos los índices de desarrollo y competitividad.16​17​18​19​20​21​22​ Aunado a esto es una nación desmilitarizada por voluntad propia desde 194823​ y posee diversas políticas ambientales de vanguardia que,24​25​26​ sumadas a un conjunto de favorables factores socioeconómicos, le otorgan un elevado nivel de prosperidad según el Instituto Legatum,27​ así como el ser considerada la sociedad más sustentable y feliz de todo el mundo desde hace una década según New Economics Foundation.28​
+
+De forma paralela, el país actualmente afronta importantes retos en su desarrollo relacionados con el pésimo estado y capacidad de mejora en su infraestructura vial y de transporte, un elevado déficit fiscal, la sostenibilidad y eficacia de su estado benefactor, el estancamiento en la pobreza y el desempleo, la tendencia a la alza en su delincuencia y desigualdad y profundos problemas ecológicos relacionados con prácticas agrícolas nocivas, mala gestión de residuos y contaminación de cuerpos de agua.</p>
+<!-- Controles para la opacidad de la capa de temperatura -->
+	<h5>Opacidad de la capa de temperatura: <span id="span-opacity">0.5</span></h5>
+	<input type='range' id='sld-opacity' min='0' max='1' step='0.1' value='0.5' onchange='updateOpacity();'>
+</div>
+</div>
+	
+	
+	
+
+
+	
+	<!-- Código principal en JS -->
+	<script src="js/scripts.js"></script>	
+</body>
+</html>
