@@ -1,0 +1,18 @@
+#mapid { 
+	height: 700px;
+	width:  99.5%;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
